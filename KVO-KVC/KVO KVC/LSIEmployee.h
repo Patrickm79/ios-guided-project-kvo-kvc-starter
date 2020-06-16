@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIEmployee : NSObject
 
-@property (nonatomic, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSString *name; // _name "firstName lastName
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic, nullable, copy) NSString *lastName;
+
 @property (nonatomic, copy) NSString *jobTitle;
 @property (nonatomic) NSInteger salary;
 
